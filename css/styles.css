@@ -1,0 +1,89 @@
+:root {
+	--body-font: 'Manrope', sans-serif;
+	/* ## Colors
+
+### Primary */
+
+	--Light-Cyan: hsl(193, 38%, 86%);
+	--Neon-Green: hsl(150, 100%, 66%);
+
+	/* ### Neutral */
+
+	--Grayish-Blue: hsl(217, 19%, 38%);
+	--Dark-Grayish-Blue: hsl(217, 19%, 24%);
+	--Dark-Blue: hsl(218, 23%, 16%);
+}
+
+body {
+	font-family: var(--body-font);
+}
+
+/* Display */
+
+body {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Text */
+.advice-container {
+	position: relative;
+	border-radius: 15px;
+	padding: 50px 50px 70px;
+}
+
+.advice-id,
+.advice-text {
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.advice-id {
+	font-size: 14px;
+	letter-spacing: 0.25em;
+	margin-bottom: 25px;
+}
+
+.advice-text {
+	font-size: 28px;
+	margin-bottom: 40px;
+}
+
+/* Colors */
+.neon-green {
+	color: var(--Neon-Green);
+}
+.light-cyan {
+	color: var(--Light-Cyan);
+}
+.grayish-blue {
+	background-color: var(--Grayish-Blue);
+}
+.dark-grayish-blue {
+	background-color: var(--Dark-Grayish-Blue);
+}
+.dark-blue {
+	background-color: var(--Dark-Blue);
+}
+
+/* Button */
+.advice-btn {
+	position: absolute;
+	width: 65px;
+	height: 65px;
+	bottom: -35px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 30px;
+}
+.btn-neon-green {
+	background-color: var(--Neon-Green);
+	transition: all 0.8s ease;
+	box-shadow: 0 0px 30px transparent;
+}
+.btn-neon-green:hover {
+	transition: all 0.6s ease;
+	box-shadow: 0 0px 30px var(--Neon-Green);
+}
