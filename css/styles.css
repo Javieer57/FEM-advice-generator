@@ -27,11 +27,14 @@ body {
 	align-items: center;
 }
 
+.advice-container {
+	max-width: 540px;
+}
 /* Text */
 .advice-container {
 	position: relative;
-	border-radius: 15px;
-	padding: 50px 50px 70px;
+	border-radius: 10px;
+	padding: 40px 25px 65px;
 }
 
 .advice-id,
@@ -40,9 +43,10 @@ body {
 	text-transform: uppercase;
 }
 
+/* Ajustar espaciado para mobile */
 .advice-id {
 	font-size: 14px;
-	letter-spacing: 0.25em;
+	letter-spacing: 0.11em;
 	margin-bottom: 25px;
 }
 
@@ -86,4 +90,17 @@ body {
 .btn-neon-green:hover {
 	transition: all 0.6s ease;
 	box-shadow: 0 0px 30px var(--Neon-Green);
+}
+
+/* Media queries */
+@media screen and (min-width: 992px) {
+	.advice-container {
+		border-radius: 15px;
+		padding: 50px 50px 70px;
+	}
+	.advice-id {
+		font-size: 14px;
+		letter-spacing: 0.25em;
+		margin-bottom: 25px;
+	}
 }

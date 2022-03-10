@@ -11,7 +11,7 @@ const loadAdvice = async () => {
 		let adviceText = data.slip.advice;
 
 		document.getElementById('adviceID').innerHTML = adviceID;
-		document.getElementById('adviceText').innerHTML = adviceText;
+		document.getElementById('adviceText').innerHTML = `“${adviceText}”`;
 	} catch (error) {
 		console.log(error);
 	}
