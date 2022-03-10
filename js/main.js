@@ -2,7 +2,7 @@ const adviceBtn = document.getElementById('adviceBtn');
 
 const loadAdvice = async () => {
 	try {
-		let advice = await fetch('https://api.adviceslip.com/advice');
+		let advice = await fetch('https://api.adviceslip.com/advice', { cache: 'reload' });
 
 		let data = await advice.json();
 		console.log(data);
@@ -18,7 +18,8 @@ const loadAdvice = async () => {
 };
 
 adviceBtn.addEventListener('click', () => {
-	location.reload();
+	// location.reload();
+	loadAdvice();
 });
 
 loadAdvice();
