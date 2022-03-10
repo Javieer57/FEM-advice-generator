@@ -1,6 +1,7 @@
 const adviceBtn = document.getElementById('adviceBtn');
 
 const loadAdvice = async () => {
+	document.getElementById('adviceText').innerHTML = `...`;
 	try {
 		let advice = await fetch('https://api.adviceslip.com/advice', { cache: 'reload' });
 
