@@ -15,7 +15,6 @@
 body {
 	font-family: var(--body-font);
 	font-weight: 800;
-	text-transform: uppercase;
 	background-color: var(--Dark-Blue);
 }
 

@@ -18,7 +18,7 @@
 			property="og:description"
 			content="Project for learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice."
 		/>
-		<!-- <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" /> -->
+		<meta property="og:image" content="./images/favicon-32x32.png" />
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
@@ -28,7 +28,7 @@
 			property="twitter:description"
 			content="Project for learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice."
 		/>
-		<!-- <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" /> -->
+		<meta property="twitter:image" content="./images/favicon-32x32.png" />
 
 		<!--  Google fonts - Manrope -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -52,15 +52,16 @@
 			<div class="row">
 				<div class="col">
 					<!-- Advice Start -->
-					<div class="advice-container text-center mx-auto d-flex flex-column flex-wrap align-items-center">
-						<h2 class="advice-id">Advice #<span id="adviceID"></span></h2>
-						<blockquote class="advice-text"><span id="adviceText"></span></blockquote>
+					<!-- I'm currently investigating the best way to include the necessary accessibility attributes for this project. They will be added soon. -->
+					<div class="advice-container text-center mx-auto d-flex flex-column flex-wrap align-items-center text-uppercase">
+						<h2 class="advice-id">advice #<span id="adviceID"></span></h2>
+						<blockquote class="advice-text" id="adviceText">...</blockquote>
 						<picture class="w-100">
 							<source media="(min-width:400px)" srcset="./images/pattern-divider-desktop.svg" />
 							<img class="img-fluid" src="./images/pattern-divider-mobile.svg" alt="" />
 						</picture>
 						<button class="rounded-circle btn advice-btn" id="adviceBtn">
-							<i class="bi bi-dice-5-fill"></i>
+							<i class="bi bi-dice-5-fill" aria-hidden="true"></i>
 						</button>
 					</div>
 					<!-- Advice End -->
