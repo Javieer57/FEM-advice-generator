@@ -73,6 +73,11 @@ body {
 	box-shadow: 0 0px 30px var(--Neon-Green);
 }
 
+.btn:focus {
+	outline: 0;
+	box-shadow: none;
+}
+
 /* Media queries */
 
 @media screen and (min-width: 992px) {
