@@ -42,7 +42,7 @@ Users should be able to:
 -   Flexbox
 -   Mobile-first workflow
 -   [Bootstrap](https://getbootstrap.com/) - CSS framework
--   [Advice Slip JSON API](https://api.adviceslip.com/) - CSS framework
+-   [Advice Slip JSON API](https://api.adviceslip.com/) - JSON API that gives out over 10 million pieces of advice.
 
 ### What I learned
 
