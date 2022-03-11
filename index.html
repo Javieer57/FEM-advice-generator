@@ -47,21 +47,23 @@
 		<!-- Main CSS -->
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
-	<body class="dark-blue">
+	<body>
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<div class="advice-container dark-grayish-blue text-center mx-auto d-flex flex-column flex-wrap align-items-center">
-						<h2 class="advice-id neon-green">Advice #<span id="adviceID"></span></h2>
-						<blockquote class="advice-text light-cyan"><span id="adviceText"></span></blockquote>
+					<!-- Advice Start -->
+					<div class="advice-container text-center mx-auto d-flex flex-column flex-wrap align-items-center">
+						<h2 class="advice-id">Advice #<span id="adviceID"></span></h2>
+						<blockquote class="advice-text"><span id="adviceText"></span></blockquote>
 						<picture class="w-100">
 							<source media="(min-width:400px)" srcset="./images/pattern-divider-desktop.svg" />
-							<img class="w-100" src="./images/pattern-divider-mobile.svg" alt="" />
+							<img class="img-fluid" src="./images/pattern-divider-mobile.svg" alt="" />
 						</picture>
-						<button class="rounded-circle btn btn-neon-green advice-btn" id="adviceBtn">
+						<button class="rounded-circle btn advice-btn" id="adviceBtn">
 							<i class="bi bi-dice-5-fill"></i>
 						</button>
 					</div>
+					<!-- Advice End -->
 				</div>
 			</div>
 		</div>
@@ -70,6 +72,6 @@
 			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
 		</div> -->
 
-		<script src="js/main.js"></script>
+		<script src="./js/main.js"></script>
 	</body>
 </html>
