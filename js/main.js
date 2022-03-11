@@ -4,6 +4,7 @@ const loadAdvice = async () => {
 	document.getElementById('adviceText').innerHTML = `...`;
 	try {
 		let advice = await fetch('https://api.adviceslip.com/advice', { cache: 'reload' });
+		// let advice = await fetch('https://api.adviceslip.com/advice/146', { cache: 'reload' });
 
 		let data = await advice.json();
 		console.log(data);
