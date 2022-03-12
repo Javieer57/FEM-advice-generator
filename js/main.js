@@ -28,4 +28,4 @@ adviceBtn.addEventListener('click', () => {
 	loadAdvice();
 });
 
-loadAdvice();
+// loadAdvice();
