@@ -84,6 +84,3 @@ I'm currently investigating the best way to include the necessary accessibility 
 
 -   Website - https://javieereufracio.com
 -   Github - [@Javieer57](https://github.com/Javieer57)
--   Codepen - [@Javieer57](https://codepen.io/Javieer57)
--   Instagram - [@javieer_wd](https://www.instagram.com/javieer_wd/)
--   Frontend Mentor - [@Javieer57](https://www.frontendmentor.io/profile/Javieer57)
