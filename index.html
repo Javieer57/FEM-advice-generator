@@ -52,26 +52,25 @@
 			<div class="row">
 				<div class="col">
 					<!-- Advice Start -->
-					<!-- I'm currently investigating the best way to include the necessary accessibility attributes for this project. They will be added soon. -->
-					<div class="advice-container text-center mx-auto d-flex flex-column flex-wrap align-items-center">
-						<h2 class="advice-id text-uppercase">advice #<span id="adviceID"></span></h2>
-						<blockquote class="advice-text" id="adviceText"></blockquote>
-						<picture class="w-100">
+					<header class="visually-hidden">
+						<h1>Advice generator app</h1>
+					</header>
+					<main class="advice-container text-center mx-auto d-flex flex-column flex-wrap align-items-center">
+						<h2 class="advice-id text-uppercase" aria-live="polite" aria-atomic="true">advice #<span id="adviceID"></span></h2>
+						<blockquote class="advice-text" id="adviceText" cite="https://api.adviceslip.com/" aria-live="polite">...</blockquote>
+						<picture class="w-100" aria-hidden="true">
 							<source media="(min-width:400px)" srcset="./images/pattern-divider-desktop.svg" />
 							<img class="img-fluid" src="./images/pattern-divider-mobile.svg" alt="" />
 						</picture>
 						<button class="rounded-circle btn advice-btn" id="adviceBtn">
-							<i class="bi bi-dice-5-fill" aria-hidden="true"></i>
+							<span class="visually-hidden">Load a new advice.</span>
+							<i class="bi bi-dice-5-fill"></i>
 						</button>
-					</div>
+					</main>
 					<!-- Advice End -->
 				</div>
 			</div>
 		</div>
-
-		<!-- <div class="attribution">
-			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
-		</div> -->
 
 		<script src="./js/main.js"></script>
 	</body>
